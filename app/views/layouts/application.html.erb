@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title><%= yield(:title) %> TOP-SECRET </title>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-0.8.1.min.css"/>
+
+    <%= render 'layouts/shim' %>
+  </head>
+
+  
+  <body>
+    <%= render 'layouts/header' %>
+
+    <%= yield %>
+  </body>
+</html>
+
+
