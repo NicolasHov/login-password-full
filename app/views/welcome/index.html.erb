@@ -1,0 +1,7 @@
+<h1>WELCOME TO MY SUPER COOL EMPTY PAGE</h1>
+
+	<% if logged_in? %>
+	    <h2><%= "42" %></h2>
+    <% else %>
+	    <h2><%= link_to 'Sign-up', new_user_path %> if you want to know everything.</h2>
+    <% end %>

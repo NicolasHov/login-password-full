@@ -1,0 +1,21 @@
+<h1>NEW USER</h1>
+
+<%= form_tag users_path do %>
+<%= render 'shared/error_messages' %>
+
+<%= label_tag 'Name :' %><br>
+<%= text_field_tag 'name' %><br>
+
+<%= label_tag 'e-Mail :' %><br>
+<%= text_field_tag 'email' %><br>
+
+<%= label_tag 'Password :' %><br>
+<%= text_field_tag 'password' %><br>
+
+<%= label_tag 'Password confirmation :' %><br>
+<%= text_field_tag 'password_confirmation' %><br>
+
+<%= submit_tag 'Sign-up' %><br>
+
+<% end %>
+
