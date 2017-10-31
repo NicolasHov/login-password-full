@@ -1,15 +1,23 @@
 <h1>LOG IN</h1>
 
-<%= form_tag login_path do %><br>
+    <%= form_tag login_path do %>
 
-	<%= label_tag 'e-Mail :'  %><br>
-	<%= text_field_tag 'session[email]' %><br>
+      <%= label_tag 'e-Mail :' %><br>
+      <%= email_field_tag 'session[email]' %><br>
 
-	<%= label_tag 'Password :' %><br>
-	<%= text_field_tag 'session[password]' %><br>
-	
-	<%= submit_tag 'Log in' %><br>
+      <%= label_tag 'Password :' %><br>
+      <%= password_field_tag 'session[password]' %><br>
 
-<% end %><br>
+      <%= label_tag :remember_me do %>
+        <%= check_box_tag 'remember_me' %>
+        <span>Remember me</span>
+      <% end %><br>
+
+      <%= submit_tag "Log in"%><br>
+    <% end %>
 
     <p>New user? <%= link_to "Sign up here!", new_user_path %></p>
+
+
+
+
